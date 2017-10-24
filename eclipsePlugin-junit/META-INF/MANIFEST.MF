@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SpotBugs Eclipse Plugin JUnit Tests
+Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse.junit
+Bundle-Version: 3.1.1.qualifier
+Fragment-Host: com.github.spotbugs.plugin.eclipse
+Bundle-Vendor: FindBugs Project
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.hamcrest,
+ org.junit,
+ org.mockito

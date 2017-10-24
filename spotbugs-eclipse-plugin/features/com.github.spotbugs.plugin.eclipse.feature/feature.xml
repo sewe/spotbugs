@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="@FEATURE_ID@"
+      id="com.github.spotbugs.plugin.eclipse.feature"
       label="SpotBugs"
-      version="@FEATURE_VERSION@"
+      version="3.1.1.qualifier"
       provider-name="SpotBugs Project"
-      plugin="@PLUGIN_ID@">
+      plugin="com.github.spotbugs.plugin.eclipse">
 
    <description url="https://spotbugs.github.io/">
       SpotBugs is a program which uses static analysis to look for bugs in Java code, a spiritual successor of FindBugs.
@@ -19,10 +19,6 @@
       SpotBugs is free software distributed under the terms of the Lesser GNU Public License.
 http://www.gnu.org/licenses/lgpl.html
    </license>
-
-   <url>
-      <update label="SpotBugs latest update site" url="https://spotbugs.github.io/eclipse-latest/"/>
-   </url>
 
    <requires>
       <import plugin="org.eclipse.core.resources"/>
@@ -39,9 +35,9 @@ http://www.gnu.org/licenses/lgpl.html
    </requires>
 
    <plugin
-         id="@PLUGIN_ID@"
-         download-size="5676"
-         install-size="5800"
-         version="@PLUGIN_VERSION@"/>
+         id="com.github.spotbugs.plugin.eclipse"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
 </feature>

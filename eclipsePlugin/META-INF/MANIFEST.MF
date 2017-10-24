@@ -1,8 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse;singleton:=true
+Bundle-Version: 3.1.1.qualifier
 Bundle-Name: SpotBugs
-Bundle-Activator: de.tobject.findbugs.FindbugsPlugin
 Bundle-Vendor: SpotBugs Project
+Bundle-Activator: de.tobject.findbugs.FindbugsPlugin
+Bundle-ActivationPolicy: lazy
+Eclipse-BuddyPolicy: registered
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.ui.workbench.texteditor,
  org.eclipse.ui,
  org.eclipse.ant.core,
@@ -25,12 +30,7 @@ Require-Bundle: org.eclipse.ui.workbench.texteditor,
  org.eclipse.core.expressions,
  org.eclipse.ui.views.properties.tabbed,
  org.eclipse.ui.console,
- org.eclipse.core.filesystem,
- spotbugs;resolution:=optional;visibility:=reexport,
- spotbugs-annotations;resolution:=optional;visibility:=reexport
-Bundle-ActivationPolicy: lazy
-Eclipse-BuddyPolicy: registered
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+ org.eclipse.core.filesystem
 Export-Package: de.tobject.findbugs,
  de.tobject.findbugs.actions,
  de.tobject.findbugs.adapters,
@@ -116,3 +116,19 @@ Export-Package: de.tobject.findbugs,
  org.objectweb.asm.tree,
  org.objectweb.asm.tree.analysis,
  org.objectweb.asm.util
+Bundle-ClassPath: spotbugs-plugin.jar,
+ lib/asm-6.0.jar,
+ lib/asm-analysis-6.0.jar,
+ lib/asm-commons-6.0.jar,
+ lib/asm-tree-6.0.jar,
+ lib/asm-util-6.0.jar,
+ lib/asm-xml-6.0.jar,
+ lib/bcel-6.1.jar,
+ lib/commons-lang-2.6.jar,
+ lib/dom4j-1.6.1.jar,
+ lib/jaxen-1.1.6.jar,
+ lib/jcip-annotations-1.0.jar,
+ lib/jFormatString-3.0.0.jar,
+ lib/jsr305-3.0.2.jar,
+ lib/spotbugs-3.1.0.jar,
+ lib/spotbugs-annotations-3.1.0.jar

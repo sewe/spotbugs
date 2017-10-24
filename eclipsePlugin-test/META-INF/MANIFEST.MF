@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: SpotBugs Eclipse Plugin Test Plug-in
-Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse.test;singleton:=true
-Bundle-Version: 3.1.0.qualifier
+Bundle-SymbolicName: com.github.spotbugs.plugin.eclipse.tests;singleton:=true
+Bundle-Version: 3.1.1.qualifier
 Bundle-Activator: de.tobject.findbugs.FindbugsTestPlugin
 Bundle-Vendor: FindBugs Project
 Require-Bundle: com.github.spotbugs.plugin.eclipse,

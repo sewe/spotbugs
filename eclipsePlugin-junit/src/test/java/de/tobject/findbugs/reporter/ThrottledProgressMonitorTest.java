@@ -1,7 +1,7 @@
 package de.tobject.findbugs.reporter;
 
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -11,7 +11,7 @@ public class ThrottledProgressMonitorTest {
     @Test
     public void testSetTaskName() {
         Clock clock = new Clock();
-        IProgressMonitor delegate = spy(IProgressMonitor.class);
+        IProgressMonitor delegate = mock(IProgressMonitor.class);
         ThrottledProgressMonitor throttled = new ThrottledProgressMonitor(delegate, clock::getCurrentTime);
         throttled.setTaskName("First");
         verify(delegate).setTaskName("First");
@@ -28,7 +28,7 @@ public class ThrottledProgressMonitorTest {
     @Test
     public void testWorked() {
         Clock clock = new Clock();
-        IProgressMonitor delegate = spy(IProgressMonitor.class);
+        IProgressMonitor delegate = mock(IProgressMonitor.class);
         ThrottledProgressMonitor throttled = new ThrottledProgressMonitor(delegate, clock::getCurrentTime);
         throttled.worked(1);
         verify(delegate).worked(1);
